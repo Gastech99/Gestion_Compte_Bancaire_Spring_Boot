@@ -21,6 +21,7 @@ public class Client implements Serializable {
     private String prenom;
     private Date dateNaissance;
     private String telephone;
+    private String email;
     private String addresse;
 
     @OneToMany(mappedBy = "client")
