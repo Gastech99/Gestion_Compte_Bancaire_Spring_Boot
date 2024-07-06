@@ -32,7 +32,7 @@ public abstract class CompteBancaire implements Serializable {
     @Column(nullable = false)
     private Date createdAt = new Date();
 
-    @Column(nullable = false)
+
     @ManyToOne
     private Client client;
 
