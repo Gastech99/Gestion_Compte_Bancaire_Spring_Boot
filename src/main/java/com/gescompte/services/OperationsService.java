@@ -1,5 +1,6 @@
 package com.gescompte.services;
 
+import com.gescompte.dto.OperationsDto;
 import com.gescompte.entities.CompteBancaire;
 import com.gescompte.entities.Operations;
 
@@ -11,4 +12,10 @@ public interface OperationsService {
     List<Operations> findByClientNumCompte(String numCompte);
 
     CompteBancaire virementFromCompteAToCompteB(String numCompteSource, String numCompteDestination, double montant);
+
+    void effectuerVersement(OperationsDto dto);
+
+    void effectuerRetrait(OperationsDto dto);
+
+    void effectuerVirement(OperationsDto dto);
 }

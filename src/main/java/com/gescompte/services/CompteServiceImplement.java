@@ -78,6 +78,16 @@ public class CompteServiceImplement implements CompteService {
         return this.compteBancaireRepository.findByNumCompte(numCompte).get();
     }
 
+    @Override
+    public boolean activeCompte(String numCompte) {
+        return false;
+    }
+
+    @Override
+    public boolean suspendCompte(String numCompte) {
+        return false;
+    }
+
     private static String generatedAccountNumber(){
         Random random = new Random();
         StringBuilder sb = new StringBuilder();

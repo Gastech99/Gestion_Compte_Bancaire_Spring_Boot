@@ -13,4 +13,7 @@ public interface CompteService {
     List<CompteEpargne> findComptesEpargne();
     List<CompteCourant> findComptesCourant();
     CompteBancaire findOne(String numCompte);
+
+    boolean activeCompte(String numCompte);
+    boolean suspendCompte(String numCompte);
 }
